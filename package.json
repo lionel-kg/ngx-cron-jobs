@@ -1,5 +1,5 @@
 {
-  "name": "@lionelkg/ngx-cron-jobs-fr",
+  "name": "ngx-cron-jobs-fr",
   "version": "18.2.0",
   "license": "MIT",
   "scripts": {
@@ -19,10 +19,6 @@
   },
   "bugs": {
     "url": "https://github.com/lionel-kg/ngx-cron-jobs/issues"
-  },
-  "author": {
-    "name": "Daniel 'yp2' Dereziński",
-    "email": "daniel.derezinski@gmail.com"
   },
   "contributors": [
     {
