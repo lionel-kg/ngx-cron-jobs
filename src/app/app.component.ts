@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
   cronConfig: CronJobsConfig = {
     multiple: true,
-    quartz: true,
+    quartz: false,
     bootstrap: true,
   };
 
@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
     this.freqSingleControl.setValue(this.freqSingle);
     this.freqSingleControl.setValidators([Validators.required]);
     this.freqSingleControl.valueChanges.subscribe(
-      (value) => (this.freqSingle = value)
+      (value) => (this.freqSingle = value),
     );
   }
 

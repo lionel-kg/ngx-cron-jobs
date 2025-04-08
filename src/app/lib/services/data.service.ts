@@ -40,17 +40,11 @@ export class DataService {
   private numeral: Array<CronJobsSelectOption> = [
     ...new Array(31).fill(0).map((_, index) => {
       const value = index + 1;
-      let suffix = "th";
+      let suffix = "eme";
       if (value <= 10 || value >= 20) {
-        switch (value % 10) {
+        switch (value) {
           case 1:
-            suffix = "st";
-            break;
-          case 2:
-            suffix = "nd";
-            break;
-          case 3:
-            suffix = "rd";
+            suffix = "er";
             break;
         }
       }
